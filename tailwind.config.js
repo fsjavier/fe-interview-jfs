@@ -7,8 +7,13 @@ export default {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: {
+          primary: "rgb(0, 211, 127);",
+        },
+      },
+    },
   },
   plugins: [],
-}
-
+};
