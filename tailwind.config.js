@@ -11,6 +11,10 @@ export default {
       colors: {
         background: {
           primary: "rgb(0, 211, 127);",
+          card: "rgb(251, 248, 244);",
+        },
+        text: {
+          primary: "rgb(22, 40, 2)",
         },
       },
     },
