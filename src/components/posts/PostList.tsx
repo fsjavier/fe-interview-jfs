@@ -16,11 +16,18 @@ export default function PostList() {
     post.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  const postCount = filteredPosts?.length || 0;
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-      {filteredPosts?.map((post: Post) => (
-        <PostItem key={post.id} post={post} />
-      ))}
-    </div>
+    <>
+      <div className="mb-4 text-xl font-semibold">
+        {postCount} {postCount === 1 ? "Post" : "Posts"} Found
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {filteredPosts?.map((post: Post) => (
+          <PostItem key={post.id} post={post} />
+        ))}
+      </div>
+    </>
   );
 }
