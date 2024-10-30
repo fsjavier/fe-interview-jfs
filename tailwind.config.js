@@ -15,6 +15,7 @@ export default {
         },
         text: {
           primary: "rgb(22, 40, 2)",
+          secondary: "rgb(1, 71, 81)",
         },
       },
     },
